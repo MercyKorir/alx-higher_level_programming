@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
+__import__("calculator_1", globals(), locals(), [], 0)
 c = add(10, 5)
 d = sub(10, 5)
 e = mul(10, 5)
