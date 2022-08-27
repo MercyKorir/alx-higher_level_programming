@@ -1,3 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    print("\n".join(["".join(["{:4d}".format(x) for x in row]) for row in matrix]))
+    row = len(matrix)
+    for x in range(row):
+        col = len(matrix[x])
+        for y in range(col):
+            print("{:d}".format(matrix[x][y]), end=" ")
+            if y == col - 1:
+                print(" ", end="")
+                print(" ", end="\n")
