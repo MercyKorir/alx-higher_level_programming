@@ -6,21 +6,12 @@ class Rectangle:
     """Contains the attributes of a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Initialize new object
+        self.__height = height
+        self.__width = width
 
-        Args:
-            width (int): Width of object
-            height (int): Height of new object
-        """
-        self.height = height
-        self.width = width
-
-    @property
     def width(self):
-        """gets width"""
         return self.width
 
-    @width.setter
     def width(self, value):
         self.width = value
         result = isinstance(value, int)
@@ -29,12 +20,9 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 9")
 
-    @property
     def height(self):
-        """Gets height"""
         return self.height
 
-    @height.setter
     def height(self, value):
         self.height = value
         res = isinstance(value, int)
