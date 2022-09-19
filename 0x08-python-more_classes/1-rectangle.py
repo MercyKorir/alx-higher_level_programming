@@ -10,10 +10,10 @@ class Rectangle:
         self.__width = width
 
     def width(self):
-        return self.width
+        return self.__width
 
     def width(self, value):
-        self.width = value
+        self.__width = value
         result = isinstance(value, int)
         if result == False:
             raise TypeError("width must be an integer")
@@ -21,10 +21,10 @@ class Rectangle:
             raise ValueError("width must be >= 9")
 
     def height(self):
-        return self.height
+        return self.__height
 
     def height(self, value):
-        self.height = value
+        self.__height = value
         res = isinstance(value, int)
         if res == False:
             raise TypeError("height must be an integer")
