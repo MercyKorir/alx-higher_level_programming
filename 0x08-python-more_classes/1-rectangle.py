@@ -6,8 +6,8 @@ class Rectangle:
     """Contains the attributes of a rectangle"""
 
     def __init__(self, width=0, height=0):
-        self.__width = width
         self.__height = height
+        self.__width = width
     def width(self):
         return self.width
     def width(self, value):
