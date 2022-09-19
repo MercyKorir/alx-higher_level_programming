@@ -7,14 +7,19 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize new object
+
         Args:
             width (int): Width of object
             height (int): Height of new object
         """
         self.__height = height
         self.__width = width
+
+    @property
     def width(self):
         return self.width
+
+    @width.setter
     def width(self, value):
         self.width = value
         result = isinstance(value, int)
@@ -22,8 +27,12 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 9")
+
+    @property
     def height(self):
         return self.height
+
+    @height.setter
     def height(self, value):
         self.height = value
         res = isinstance(value, int)
