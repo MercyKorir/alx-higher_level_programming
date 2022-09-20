@@ -1,0 +1,22 @@
+The 0-add_integer.py module
+===========================
+<<
+Using the add_integer function
+--------------------------------
+
+First input the integer values of either
+a or both a and b as the arguments
+when calling the function add_integer
+Like this
+
+	>>> add_integer(2, 3)
+
+or
+
+	>>> add_integer(2)
+
+When you run your line of code,
+your output will be like this
+
+	>>> add_integer(2, 3)
+	5
