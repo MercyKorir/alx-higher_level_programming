@@ -6,3 +6,4 @@ def search_replace(my_list, search, replace):
             element = replace
         else:
             element = element
+    return my_list
