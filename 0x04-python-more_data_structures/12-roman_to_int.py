@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def roman_to_int(roman_string):
-    i = 0
     int_val = 0
 
     if not isinstance(roman_string, str):
@@ -16,11 +15,9 @@ def roman_to_int(roman_string):
             "C": 100,
             "D": 500,
             "M": 1000}
-    while i < len(roman_string):
-        if i + 1 < len(roman_string) and roman_string[i:i+2] in roman_values:
-            int_val += roman_values[roman_string[i:i+2]]
-            i += 2
+for i in range(len(roman_string)):
+        if i > 0 and roman_values[roman_string[i]] > roman_values[roman_string[i - 1]]:
+            int_val += roman_values[roman_string[i]] - 2 * roman_values[roman_string[i - 1]]
         else:
             int_val += roman_values[roman_string[i]]
-            i += 1
     return (int_val)
