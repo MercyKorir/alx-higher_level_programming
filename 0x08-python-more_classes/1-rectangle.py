@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-"""Declaration of a class Rectangle"""
+"""Definition of class Rectangle"""
 
 
 class Rectangle:
-    """Declaration of instance attributes"""
+    """Contains the attributes of a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Creation of instance of Rectangle
+        """Declaration of attributes height and width
 
         Args:
-            width (int): width of rectangle
-            height (int): height of rectangle
+            height (int): height of the rectangle
+            width (int): width of the rectangle
         """
-        self.__width = width
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
@@ -36,5 +36,5 @@ class Rectangle:
         self.__height = value
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
