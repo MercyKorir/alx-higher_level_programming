@@ -7,6 +7,7 @@ class Rectangle:
 
     Attributes:
         number_of_instances (int): instances of rectangle
+        print_symbol (any): symbol used for string rep
     """
     number_of_instances = 0
     print_symbol = "#"
@@ -71,7 +72,6 @@ class Rectangle:
         Args:
             size(int): width and height of rectangle
         """
-
         return (cls(size, size)
 
     def __str__(self):
