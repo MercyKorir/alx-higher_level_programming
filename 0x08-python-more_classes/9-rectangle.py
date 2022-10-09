@@ -66,6 +66,12 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """new rectangle is returned with same height width and size
+
+        Args:
+            size(int): width and height of rectangle
+        """
+
         return (cls(size, size)
 
     def __str__(self):
