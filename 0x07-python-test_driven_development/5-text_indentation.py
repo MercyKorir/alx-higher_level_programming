@@ -2,7 +2,7 @@
 """Definition of the function text_identation"""
 
 
-def text_identation(text):
+def text_indentation(text):
     """function prints text with 2 new lines after each
     . ? and : character
     """
