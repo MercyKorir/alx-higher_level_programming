@@ -1,5 +1,5 @@
 -- This script lists all records of second_table
 SELECT score, name
 FROM second_table
-WHERE name NOT ''
+WHERE name != ''
 ORDER BY score DESC;
