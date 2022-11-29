@@ -14,9 +14,9 @@ argv.forEach((val, index) => {
       for (let height = 0; height < x; height++) {
         let row = '';
         for (let width = 0; width < x; width++) {
-          row += 'x';
+          row += 'X';
         }
-        console.log(row + ' ');
+        console.log(row);
       }
     }
   }
