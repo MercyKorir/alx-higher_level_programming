@@ -10,9 +10,9 @@ if (len === 2 || len === 3) {
   process.argv.forEach((val) => {
     if (Number(val) > first) {
       second = first;
-      first = val;
-    } else if (val > second && val !== first) {
-      second = val;
+      first = Number(val);
+    } else if (Number(val) > second && Number(val) !== first) {
+      second = Number(val);
     }
   });
   console.log(`${second}`);
