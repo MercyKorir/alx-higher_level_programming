@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 #list states from hbtn_oe_0_usa
+#arguments are username, pasword, and db name
 import MySQLdb
 import sys
 
