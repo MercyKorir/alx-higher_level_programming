@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#list states from hbtn_oe_0_usa
 import MySQLdb
 import sys
 
