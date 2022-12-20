@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-#list states from hbtn_oe_0_usa
-#Usage: ./0select_states.py <mysql username> \
-#                           <mysql password> \
-#                           <database name>
-import MySQLdb
+# List all states from hbtn_0e_0_usa
+# Usage: ./0select_states.py <mysql username> \
+#                            <mysql password> \
+#                            <database name>
 import sys
+import MySQLdb
 
 if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
