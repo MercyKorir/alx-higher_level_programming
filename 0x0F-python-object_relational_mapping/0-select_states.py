@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# List all states from hbtn_0e_0_usa
+# Lists all states from database hbtn_0e_0_usa.
 # Usage: ./0select_states.py <mysql username> \
 #                            <mysql password> \
 #                            <database name>
