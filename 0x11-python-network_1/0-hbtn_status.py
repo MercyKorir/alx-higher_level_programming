@@ -7,5 +7,13 @@ This script fetches a url
 
 
 import urllib.request
-with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-    html = response.read()
+if __name__ == "__main__":
+    url = 'https://alx-intranet.hbtn.io/status'
+    with urllib.request.urlopen(url) as response:
+        body = response.read()
+        body_size = type(body)
+        body_utf8 = body.decode("utf-8")
+        print("Body response:")
+        print("\t- type: {}".format(body_size))
+        print("\t- content: {}".format(body))
+        print("\t- utf8 content: {}".format(body_utf8))
