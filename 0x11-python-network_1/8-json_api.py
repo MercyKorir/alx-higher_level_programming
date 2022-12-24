@@ -29,5 +29,5 @@ if __name__ == "__main__":
             id = json_response.get("id")
             name = json_response.get("name")
             print("[{}] {}".format(id, name))
-    except ValueError, TypeError:
+    except (ValueError, TypeError):
         print("Not a valid JSON")
