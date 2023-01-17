@@ -13,6 +13,6 @@ request(url, (err, res, body) => {
         count++;
       }
     });
-    console.log(`${count}`);
+    console.log(count);
   }
 });
