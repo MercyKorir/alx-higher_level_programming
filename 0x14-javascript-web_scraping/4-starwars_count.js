@@ -7,8 +7,8 @@ request(url, (err, res, body) => {
     console.error(err);
   } else {
     let count = 0;
-    const result = JSON.parse(body);
-    result.results.forEach((movie) => {
+    const charData = JSON.parse(body);
+    charData.results.forEach((movie) => {
       if (movie.characters.includes(`https://swapi-api.alx-tools.com/api/people/${id}/`)) {
         count++;
       }
