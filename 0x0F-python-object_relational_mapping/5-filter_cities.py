@@ -20,10 +20,13 @@ if __name__ == "__main__":
             WHERE states.name = %s ORDER BY cities.id ASC;"
     curs.execute(query, (state_name,))
     cities = curs.fetchall()
-    for i, city in enumerate(cities):
-        if i == len(cities) - 1:
-            print(city[0], end="\n")
-        else:
-            print(city[0], end=", ")
+    if cities:
+        for i, city in enumerate(cities):
+            if i == len(cities) - 1:
+                print(city[0], end="\n")
+            else:
+                print(city[0], end=", ")
+    else:
+        print()
     curs.close()
     db.close()
