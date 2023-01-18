@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""adds State object Louisiana to db"""
+"""deletes all State objects with name containing a"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -11,8 +11,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state_name = State(name="Louisiana")
-    session.add(state_name)
+    states = session.query(State).filter(State.name.like("%a%")).all()
+    for state in states:
+        session.delete(state)
     session.commit()
-    print(state_name.id)
     session.close()

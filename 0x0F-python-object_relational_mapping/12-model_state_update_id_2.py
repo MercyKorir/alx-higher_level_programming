@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""prints the first State object from db hbtn_0e_6_usa"""
+"""changes name of State object"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
