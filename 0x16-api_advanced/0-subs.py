@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Qqueries the reddit api and returns the number of subscribers"""
+"""Queries the reddit api and returns the number of subscribers"""
 import requests
 
 
